@@ -3,7 +3,7 @@
             <div class="container">
 
                 <!-- Image Logo -->
-                <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
+                {{-- <a class="navbar-brand logo-image" href="{{route('Acceuil')}}"><img src="images/sca.png" alt="alternative"></a>  --}}
 
                 <!-- Text Logo - Use this if you don't have a graphic logo -->
                 <!-- <a class="navbar-brand logo-text" href="index.html">Name</a> -->
@@ -29,6 +29,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
+                        {{-- <li class="nav-item">
+                            <a class="nav-link" href="#contact">Connexion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">inscription</a>
+                        </li> --}}
                     </ul>
                     <span class="nav-item social-icons">
                         {{-- <span class="fa-stack">

@@ -4,7 +4,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-container">
-                            <h1 class="h1-large">Immigration Rapide Canada</h1>
+                            <h1 class="h1-large">Studying in Canada</h1>
                             <p class="p-large">Nous mettons à votre disposition des experts en immigration et des anciens étudiants étrangers au Canada, pour vous accompagner dans vos démarches pour étudier et s’installer au Canada.</p>
                             <a class="btn-solid-lg" href="#intro">Decouvrir</a>
                         </div> <!-- end of text-container -->

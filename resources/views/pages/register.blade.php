@@ -6,7 +6,8 @@
             <h2 class="h2-heading">Veuillez remplir les formulaires</h2>
         </div> <!-- end of col -->
       </div> <!-- end of row -->
-        <form class="row g-3">
+        <form class="row g-3" method="POST" enctype="multipart/form-data">
+          
             <label for="inputEmail4" class="form-label" id="description">Nom Complet</label>
             <div class="col-md-6 form-floating">
               <input type="text" class="form-control" id="floatingNom">
@@ -102,25 +103,25 @@
 
                 <label class="form-check-label" id="description">Relevés de notes de la seconde à la terminale.</label>
                 <div class="input-group mb-4">
-                  <input type="file" class="form-control" id="inputGroupFile02">
+                  <input type="file" class="form-control" id="inputGroupFile02" name="fichiers[]" multiple>
                   <label class="input-group-text" for="inputGroupFile02">Upload</label>
                 </div> 
 
                 <label class="form-check-label" id="description">Relevé de notes du BAC, attestation ou diplôme de BAC</label>
                 <div class="input-group mb-4">
-                  <input type="file" class="form-control" id="inputGroupFile02">
+                  <input type="file" class="form-control" id="inputGroupFile02" name="fichiers[]" multiple>
                   <label class="input-group-text" for="inputGroupFile02">Upload</label>
                 </div> 
 
                 <label class="form-check-label" id="description">Attestation ou un dernier diplôme équivalent</label>
                 <div class="input-group mb-4">
-                  <input type="file" class="form-control" id="inputGroupFile02">
+                  <input type="file" class="form-control" id="inputGroupFile02" name="fichiers[]" multiple>
                   <label class="input-group-text" for="inputGroupFile02">Upload</label>
                 </div> 
 
                 <label class="form-check-label" id="description">Certificat de naissance</label>
                 <div class="input-group mb-4">
-                  <input type="file" class="form-control" id="inputGroupFile02">
+                  <input type="file" class="form-control" id="inputGroupFile02" name="fichiers[]" multiple>
                   <label class="input-group-text" for="inputGroupFile02">Upload</label>
                 </div> 
                 <div class="col-12">

@@ -13,5 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {return view('index');});
-Route::get('/', function () {return view('dashboard.index');});
+Route::get('/', function () {return view('index');})->name('Acceuil');
+// Route::get('/', function () {return view('dashboard.layouts.index');})->name('Dashboard');
+// Route::get('/', function () {return view('dashboard.layouts.form_buttons');})->name('Dashboard');

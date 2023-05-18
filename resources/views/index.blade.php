@@ -19,7 +19,7 @@
         <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
         <!-- Webpage Title -->
-        <title>Name</title>
+        <title>Studying in Canada</title>
         
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
         <link href= "{{asset('css/styles.css')}}" rel="stylesheet">
     
         <!-- Favicon  -->
-        <link rel="icon" href="{{asset('images/favicon.png')}}">
+        <link rel="icon" href="{{asset('images/favicon.ico')}}">
     </head>
     <body data-bs-spy="scroll" data-bs-target="#navbarExample">
         
@@ -50,7 +50,6 @@
         <!-- Services -->
           @include('pages.service')
         <!-- end of services -->
-
 
         <!-- About -->
              @include("pages.about")

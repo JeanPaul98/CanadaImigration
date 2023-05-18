@@ -31,7 +31,7 @@
                         <!-- Card -->
                         <div class="card">
                             <span class="fa-stack text-center">     
-                                <i class="fas fa-binoculars fa-stack-1x text-success "></i>  
+                                <i class="fas fa-tasks fa-stack-1x text-success "></i>  
                             </span>
                             <div class="card-body">
                                 <h5 class="card-title">Demande d'admission</h5>
@@ -43,7 +43,7 @@
                         <!-- Card -->
                         <div class="card">
                             <span class="fa-stack ">
-                                <i class="fas fa-list-alt fa-stack-1x text-success"></i>
+                                <i class="fas fa-calendar-check fa-stack-1x text-success"></i>
                             </span>
                             <div class="card-body">
                                 <h5 class="card-title">Demande de CAQ</h5>
@@ -55,7 +55,7 @@
                         <!-- Card -->
                         <div class="card">
                             <span class="fa-stack">
-                                <i class="fas fa-chart-pie fa-stack-1x text-success"></i>
+                                <i class="fab fa-cc-visa fa-stack-1x text-success"></i>
                             </span>
                             <div class="card-body">
                                 <h5 class="card-title">Demande de Visa</h5>
