@@ -6,7 +6,13 @@
             <h2 class="h2-heading">Veuillez remplir les formulaires</h2>
         </div> <!-- end of col -->
       </div> <!-- end of row -->
-        <form class="row g-3" method="POST" enctype="multipart/form-data">
+
+      @if (session('success'))
+        <div>{{ session('success') }}</div>
+      @endif
+
+        <form class="row g-3" action="/" method="POST" enctype="multipart/form-data">
+          @csrf
 
             <label for="inputEmail4" class="form-label" id="description">Nom Complet</label>
             <div class="col-md-6 form-floating">
@@ -23,25 +29,25 @@
                     <div class="col-md-12">
                         <label for="inputEmail4" class="form-check-label" id="description">Niveau d'études</label>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="niveau_one" id="niveau_one" value="Baccalauréat">
+                          <input class="form-check-input" type="checkbox" name="niveau" id="niveau_one" value="Baccalauréat">
                           <label class="form-check-label" for="gridCheck">
                             Baccalauréat
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="niveau_two" id="niveau_two" value="Licence">
+                          <input class="form-check-input" type="checkbox" name="niveau" id="niveau_two" value="Licence">
                           <label class="form-check-label" for="gridCheck">
                             Licence
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="niveau_tree" id="niveau_tree" value="Maitrise">
+                          <input class="form-check-input" type="checkbox" name="niveau" id="niveau_tree" value="Maitrise">
                           <label class="form-check-label" for="gridCheck">
                             Maitrise
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" name="niveau_four" id="niveau_four" value="Doctorat">
+                          <input class="form-check-input" type="checkbox" name="niveau" id="niveau_four" value="Doctorat">
                           <label class="form-check-label" for="gridCheck">
                             Doctorat
                           </label>

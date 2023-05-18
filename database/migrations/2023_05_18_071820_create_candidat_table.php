@@ -17,10 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->string('prenom');
-            $table->boolean('niveau_one')->default(false);;
-            $table->boolean('niveau_two')->default(false);;
-            $table->boolean('niveau_tree')->default(false);;
-            $table->boolean('niveau_four')->default(false);;
+            $table->boolean('niveau')->default(false);;
             $table->string('email');
             $table->string('telephone');
             $table->boolean('province_one')->default(false);;

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CandidatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {return view('index');})->name('Acceuil');
 // Route::get('/', function () {return view('dashboard.layouts.index');})->name('Dashboard');
 // Route::get('/', function () {return view('dashboard.layouts.form_buttons');})->name('Dashboard');
+Route::post('/', [CandidatController::class, 'store']);
