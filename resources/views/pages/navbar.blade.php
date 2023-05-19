@@ -29,12 +29,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
-                        {{-- <li class="nav-item">
-                            <a class="nav-link" href="#contact">Connexion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">inscription</a>
-                        </li> --}}
                     </ul>
                     <span class="nav-item social-icons">
                         {{-- <span class="fa-stack">

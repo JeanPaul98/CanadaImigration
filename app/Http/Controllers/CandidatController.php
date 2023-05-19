@@ -14,8 +14,8 @@ class CandidatController extends Controller
             'nom' => 'required',
             'prenom' => 'required',
             'telephone' => 'required',
-            'email' => 'required|email|unique:candidat',
-            'niveau_one' => 'nullable',
+            'email' => 'required|email|unique:candidats',
+            'niveau' => 'required',
             'province_one' => 'nullable',
             'province_two' => 'nullable',
             'province_tree' => 'nullable',
@@ -38,12 +38,7 @@ class CandidatController extends Controller
           $candidat->prenom = $validatedData['prenom'];
           $candidat->telephone = $validatedData['telephone'];
           $candidat->email = $validatedData['email'];
-
-
-          $candidat->niveau_one = $request->has('niveau_one');
-          $candidat->niveau_two = $request->has('niveau_two');
-          $candidat->niveau_tree = $request->has('niveau_tree');
-          $candidat->niveau_four = $request->has('niveau_four');
+          $candidat->niveau = $request->has('niveau');
           $candidat->province_one = $request->has('province_one');
           $candidat->province_two = $request->has('province_two');
           $candidat->province_tree = $request->has('province_tree');
@@ -57,7 +52,7 @@ class CandidatController extends Controller
                 $filename = $file->store('uploads');
                 $uploadedFiles[] = $filename;
             }
-            $candidat->files = json_encode($uploadedFiles);
+            $candidat->fichier_one = json_encode($uploadedFiles);
         } 
         // Gérer les fichiers téléchargés
         if ($request->hasFile('fichier_two')) {
@@ -66,7 +61,7 @@ class CandidatController extends Controller
                 $filename = $file->store('uploads');
                 $uploadedFiles[] = $filename;
             }
-            $candidat->files = json_encode($uploadedFiles);
+            $candidat->fichier_two = json_encode($uploadedFiles);
         } 
         // Gérer les fichiers téléchargés
         if ($request->hasFile('fichier_tree')) {
@@ -75,7 +70,7 @@ class CandidatController extends Controller
                 $filename = $file->store('uploads');
                 $uploadedFiles[] = $filename;
             }
-            $candidat->files = json_encode($uploadedFiles);
+            $candidat->fichier_tree = json_encode($uploadedFiles);
         } 
         // Gérer les fichiers téléchargés
         if ($request->hasFile('fichier_four')) {
@@ -84,15 +79,15 @@ class CandidatController extends Controller
                 $filename = $file->store('uploads');
                 $uploadedFiles[] = $filename;
             }
-            $candidat->files = json_encode($uploadedFiles);
+            $candidat->fichier_four = json_encode($uploadedFiles);
         } 
    
-        // Sauvegarder l'utilisateur
+        // Sauvegarder le candidat
         $candidat->save();
     
          // Rediriger l'utilisateur ou afficher un message de succès
-         return redirect()->back()->with('success', 'Formulaire soumis avec succès !');
-        //  return redirect('/formulaire')->with('success', 'Formulaire soumis avec succès !');
+        //  return redirect()->back()->with('success', 'Formulaire soumis avec succès !');
+         return redirect('/')->with('success', 'Formulaire soumis avec succès !');
     }
     
 }

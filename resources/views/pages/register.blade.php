@@ -7,10 +7,6 @@
         </div> <!-- end of col -->
       </div> <!-- end of row -->
 
-      @if (session('success'))
-        <div>{{ session('success') }}</div>
-      @endif
-
         <form class="row g-3" action="/" method="POST" enctype="multipart/form-data">
           @csrf
 
