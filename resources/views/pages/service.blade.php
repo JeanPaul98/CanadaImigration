@@ -11,7 +11,7 @@
 
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button text-danger " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <button class="accordion-button text-info " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                         PACKAGE ETE : 700mil FCFA
                     </button>
                   </h2>
@@ -38,7 +38,7 @@
 
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button collapsed text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    <button class="accordion-button collapsed text-info" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                         PACKAGE AUTOMNE : 500mil FCFA
                     </button>
                   </h2>
@@ -132,7 +132,7 @@
 
                 <div class="accordion-item ">
                   <h2 class="accordion-header ">
-                    <button class="accordion-button collapsed  text-success" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+                    <button class="accordion-button collapsed  text-info" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
                         PACKAGE ERABLE : 500mil FCFA
                     </button>
                   </h2>
@@ -156,7 +156,7 @@
                                 <div class="flex-grow-1">Recherche de logement au Canada</div>
                             </li>
                         </ul>  
-                      <strong class="text-warning">NB: Veuillez noter que ce package est exclusivement réservé aux détenteurs d'un visa</strong>
+                      <strong class="text-danger">NB: Veuillez noter que ce package est exclusivement réservé aux détenteurs d'un visa</strong>
                     </div>
                   </div>
                 </div>

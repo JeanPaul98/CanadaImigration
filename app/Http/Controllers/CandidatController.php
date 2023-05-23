@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use App\Models\candidat;
 
 class CandidatController extends Controller
@@ -9,6 +11,7 @@ class CandidatController extends Controller
     //
     public function store(Request $request){
 
+    try {
         // Valider les données du formulaire
         $validatedData = $request->validate([
             'nom' => 'required',
@@ -19,7 +22,7 @@ class CandidatController extends Controller
             'province_one' => 'nullable',
             'province_two' => 'nullable',
             'province_tree' => 'nullable',
-            'autorisation' => 'nullable',
+            'autorisation' => 'required',
             'fichier_one' => 'nullable|array',
             'fichier_one.*' => 'nullable|mimes:jpeg,png,pdf|max:2048',
             'fichier_two' => 'nullable|array',
@@ -84,10 +87,20 @@ class CandidatController extends Controller
    
         // Sauvegarder le candidat
         $candidat->save();
+
+        // Afficher un message de succès
+        Session::flash('success', 'Le formulaire à été envoyer avec succès.');
+
+        // Rediriger l'utilisateur
+        return redirect()->back();
     
-         // Rediriger l'utilisateur ou afficher un message de succès
-        //  return redirect()->back()->with('success', 'Formulaire soumis avec succès !');
-         return redirect('/')->with('success', 'Formulaire soumis avec succès !');
+    } catch (Exception $e) {
+        // Afficher un message d'erreur
+        Session::flash('error', 'Une erreur s\'est produite lors de l\'envoi du formulaire.');
+
+        // Rediriger l'utilisateur
+        return redirect()->back();
+      }
     }
     
 }

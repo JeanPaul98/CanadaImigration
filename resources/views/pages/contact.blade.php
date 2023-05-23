@@ -10,15 +10,15 @@
                 <!-- Contact Form -->
                 <form>
                     <div class="mb-4 form-floating">
-                        <input type="text" class="form-control" id="floatingInput4" placeholder="Name">
+                        <input type="text" name="nom" class="form-control" id="floatingInput4" placeholder="Name">
                         <label for="floatingInput4">Nom</label>
                     </div>
                     <div class="mb-4 form-floating">
-                        <input type="email" class="form-control" id="floatingInput5" placeholder="name@example.com">
+                        <input type="email" name="email" class="form-control" id="floatingInput5" placeholder="name@example.com">
                         <label for="floatingInput5">Email</label>
                     </div>
                     <div class="mb-4 form-floating">
-                        <textarea class="form-control" id="floatingTextarea1" placeholder="Your message here" rows="4"></textarea>
+                        <textarea class="form-control" name="message" id="floatingTextarea1" placeholder="Your message here" rows="4"></textarea>
                         <label for="floatingTextarea1">Message</label>
                     </div>
                     <button type="submit" class="form-control-submit-button">Envoyer</button>

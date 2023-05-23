@@ -27,7 +27,7 @@
         <link href="{{asset('css/fontawesome-all.min.css')}}" rel="stylesheet">
         <link href="{{asset('css/swiper.css')}}" rel="stylesheet">
         <link href= "{{asset('css/styles.css')}}" rel="stylesheet">
-    
+        <script src="{{ asset('js/alerts.js') }}"></script>
         <!-- Favicon  -->
         <link rel="icon" href="{{asset('images/favicon.ico')}}">
     </head>
@@ -90,6 +90,7 @@
         <!-- end of back to top button -->
             
         <!-- Scripts -->
+
         <script src="{{asset('js/bootstrap.min.js')}}"></script> <!-- Bootstrap framework -->
         <script src="{{asset('js/swiper.min.js')}}"></script> <!-- Swiper for image and text sliders -->
         <script src="{{asset('js/purecounter.min.js')}}"></script> <!-- Purecounter counter for statistics numbers -->

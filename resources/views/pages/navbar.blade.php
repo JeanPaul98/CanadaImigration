@@ -3,7 +3,7 @@
             <div class="container">
 
                 <!-- Image Logo -->
-                {{-- <a class="navbar-brand logo-image" href="{{route('Acceuil')}}"><img src="images/sca.png" alt="alternative"></a>  --}}
+                {{-- <a class="navbar-brand logo-image" href="{{route('Acceuil')}}"><img src="images/sic.png" alt="alternative"></a>  --}}
 
                 <!-- Text Logo - Use this if you don't have a graphic logo -->
                 <!-- <a class="navbar-brand logo-text" href="index.html">Name</a> -->
