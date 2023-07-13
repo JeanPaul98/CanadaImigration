@@ -14,14 +14,23 @@ class CandidatController extends Controller
     try {
         // Valider les données du formulaire
         $validatedData = $request->validate([
+            // nom
             'nom' => 'required',
+            // prenom
             'prenom' => 'required',
+            // telephone
             'telephone' => 'required',
+            // adresse mail
             'email' => 'required|email|unique:candidats',
+            // niveau d'etude
             'niveau' => 'required',
+            // province une
             'province_one' => 'nullable',
+            // province deux
             'province_two' => 'nullable',
+            // province trois
             'province_tree' => 'nullable',
+            // autorisation
             'autorisation' => 'required',
             'fichier_one' => 'nullable|array',
             'fichier_one.*' => 'nullable|mimes:jpeg,png,pdf|max:2048',

@@ -15,6 +15,6 @@ use App\Http\Controllers\CandidatController;
 */
 
 Route::get('/', function () {return view('index');})->name('Acceuil');
+Route::post('/', [CandidatController::class, 'store']);
 // Route::get('/', function () {return view('dashboard.layouts.index');})->name('Dashboard');
 // Route::get('/', function () {return view('dashboard.layouts.form_buttons');})->name('Dashboard');
-Route::post('/', [CandidatController::class, 'store']);
