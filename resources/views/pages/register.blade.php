@@ -7,19 +7,22 @@
         </div> <!-- end of col -->
       </div> <!-- end of row -->
 
-        <form class="row g-3" action="/" method="POST" enctype="multipart/form-data">
+        <form class="row g-3" action="/" method="POST" enctype="multipart/form-data"> 
           @csrf
 
-            <label for="inputEmail4" class="form-label" id="description">Nom Complet</label>
+            {{-- nom --}}
             <div class="col-md-6 form-floating">
               <input type="text" class="form-control" id="floatingNom" name="nom" >
               <label for="floatingNom">Nom</label>
             </div>
+
+            {{-- prenom --}}
             <div class="col-md-6 form-floating">
               <input type="text" class="form-control" id="floatingPrenom" name="prenom" >
               <label for="floatingPrenom">Prenom</label>
             </div>
            
+            {{-- nivau d'etude --}}
             <div class="mb-4">
                 <div class="row">
                     <div class="col-md-12">
@@ -52,6 +55,7 @@
                 </div>
             </div>
 
+            {{-- telephone et adresse mail --}}
             <div class="mb-4">
                 <div class="row">
                     <div class="col-md-8 form-floating">
@@ -65,6 +69,7 @@
                 </div>
             </div>
 
+            {{-- province --}}
             <div class="mb-4">
                 <div class="row">
                     <div class="col-md-6">
@@ -101,36 +106,44 @@
                 </div>
             </div>
 
+            {{-- register --}}
             <div class="col-md-12">
+              {{-- Relevés de notes de la seconde à la terminale. --}}
+              <label class="form-check-label" id="description">Relevés de notes de la seconde à la terminale.</label>
+              <div class="input-group mb-4">
+                <input type="file" class="form-control"   id="fichier_one" name="fichier_one[]" multiple>
+                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+              </div> 
 
-                <label class="form-check-label" id="description">Relevés de notes de la seconde à la terminale.</label>
-                <div class="input-group mb-4">
-                  <input type="file" class="form-control"   id="fichier_one" name="fichier_one[]" multiple>
-                  <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                </div> 
+              {{-- Relevé de notes du BAC, attestation ou diplôme de BAC --}}
+              <label class="form-check-label" id="description">Relevé de notes du BAC, attestation ou diplôme de BAC</label>
+              <div class="input-group mb-4">
+                <input type="file" class="form-control" id="fichier_two" name="fichier_two[]" multiple>
+                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+              </div> 
 
-                <label class="form-check-label" id="description">Relevé de notes du BAC, attestation ou diplôme de BAC</label>
-                <div class="input-group mb-4">
-                  <input type="file" class="form-control" id="fichier_two" name="fichier_two[]" multiple>
-                  <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                </div> 
+              {{-- Attestation ou un dernier diplôme équivalent --}}
+              <label class="form-check-label" id="description">Attestation ou un dernier diplôme équivalent</label>
+              <div class="input-group mb-4">
+                <input type="file" class="form-control"  id="fichier_tree" name="fichier_tree[]" multiple>
+                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+              </div> 
 
-                <label class="form-check-label" id="description">Attestation ou un dernier diplôme équivalent</label>
-                <div class="input-group mb-4">
-                  <input type="file" class="form-control"  id="fichier_tree" name="fichier_tree[]" multiple>
-                  <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                </div> 
+              {{-- Certificat de naissance --}}
+              <label class="form-check-label" id="description">Certificat de naissance</label>
+              <div class="input-group mb-4">
+                <input type="file" class="form-control"  id="fichier_four" name="fichier_four[]" multiple>
+                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+              </div> 
 
-                <label class="form-check-label" id="description">Certificat de naissance</label>
-                <div class="input-group mb-4">
-                  <input type="file" class="form-control"  id="fichier_four" name="fichier_four[]" multiple>
-                  <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                </div> 
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Soumettre</button>
-                </div>
+            </div> 
+
+            {{-- boutton --}}
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Soumettre</button>
+            </div>
+    
         </form>
-
         <br>
 
         @if (Session::has('success'))
